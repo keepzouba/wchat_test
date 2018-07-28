@@ -1,0 +1,52 @@
+.nowplaying{
+  width: 100%;
+  padding-top: 18rpx;
+}
+.nowplaying_content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.nowplaying_content>view{
+  height: 484rpx;
+  width: 682rpx;
+  margin-bottom: 34rpx;
+  box-shadow: 1rpx 1rpx 2rpx #a8a8a8;
+
+}
+.nowplaying_content>view>image{
+  width: 100%;
+  height: 383.62rpx;
+}
+.row_desc{
+  width: 100%;
+  height: 100rpx;
+  display: flex
+}
+.nowplaying_score{
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:36rpx;
+  color: #f78360
+}
+.nowplaying_desc{
+   flex: 6 1 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 22rpx
+}
+.nowplaying_name{
+  font-size: 26rpx
+}
+.nowplaying_count{
+  font-size: 20rpx;
+  color: #9a9a9a;
+}

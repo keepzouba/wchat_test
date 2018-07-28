@@ -1,0 +1,16 @@
+<template name='header'>
+  <view id='top'>
+    <view class='top_title'>
+      卖座电影
+    </view>
+    <view class='top_position'>
+      <view class='top_city'>
+        长沙
+      </view>
+      <image src='{{top.downimg}}' class='top_positionimg'></image>
+    </view>
+    <view class='top_my'>
+      <image src='{{top.myimg}}'></image>
+    </view>
+  </view>
+</template>

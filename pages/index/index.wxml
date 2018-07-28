@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <component-top></component-top>
+  <component-swiper></component-swiper>
+  <component-nowplaying></component-nowplaying>
+  <view class='upcoming'>
+    <view>
+      即将上映
+    </view>
+  </view>
+  <component-comingsoon></component-comingsoon>
+
+</view>

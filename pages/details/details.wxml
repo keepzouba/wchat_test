@@ -1,0 +1,48 @@
+<!--pages/details/details.wxml-->
+<view>
+  <component-top></component-top>
+  <view class='film_info'>
+    <image src='{{detailsData.poster.origin}}' class='film_logo'></image>
+    <view class='film_introduction'>
+      影片简介
+    </view>
+    <!-- 导演 -->
+    <view class='film_desc'>
+      <view>
+        导演
+      </view>
+      <view>
+        ：
+      </view>
+      <view>
+        {{detailsData.director}}
+      </view>
+    </view>
+    <!-- 演员 -->
+    <view class='film_desc'>
+      <view>
+        主演
+      </view>
+      <view>
+        ：
+      </view>
+      <view wx:for="{{detailsData.actors}}" wx:key="{{index}}">
+        {{item.name}} |
+      </view>
+    </view>
+
+     <!-- 地区语言 -->
+    <view class='film_desc'>
+      <view>
+        地区语言
+      </view>
+      <view>
+        ：
+      </view>
+      <view>
+        {{detailsData.nation}}({{detailsData.language}})
+      </view>
+    </view>
+
+  </view>
+</view>

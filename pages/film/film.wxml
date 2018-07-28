@@ -1,0 +1,16 @@
+<!--pages/film/film.wxml-->
+<view id='film'>
+  <component-top></component-top>
+  <view class='film_content'>
+    <view class="film_tag">
+      <view class="{{tag_type=='nowplaying'?'clickActive':''}}" bind:tap="tag_toggle_now" id='nowplaying'>
+        正在热映
+      </view>
+      <view class="{{tag_type=='comingsoon'?'clickActive':''}}" id='comingsoon' bind:tap="tag_toggle_soon">
+        即将上映
+      </view>
+    </view>
+    <component-now-playing wx:if="{{tag_type=='nowplaying'?true:false}}"></component-now-playing>
+    <component-coming-soon wx:if="{{tag_type=='comingsoon'?true:false}}"></component-coming-soon>
+  </view>
+</view>

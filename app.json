@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/details/details",
+    "pages/index/index",
+    "pages/film/film",
+    "pages/logs/logs",
+    "pages/cinema/cinema",
+    "pages/component/film_nowplaying/film_nowplaying"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#f78360",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/static/images/home.png",
+        "selectedIconPath": "./pages/static/images/slc_home.png"
+      },
+      {
+        "pagePath": "pages/film/film",
+        "text": "影片",
+        "iconPath": "./pages/static/images/film.png",
+        "selectedIconPath": "./pages/static/images/slc_film.png"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院",
+        "iconPath": "./pages/static/images/cinema.png",
+        "selectedIconPath": "./pages/static/images/slc_cinema.png"
+      }
+    ]
+  }
+}

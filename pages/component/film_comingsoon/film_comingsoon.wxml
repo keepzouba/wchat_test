@@ -1,0 +1,29 @@
+<!--pages/component/film_soonplaying/film_soonplaying.wxml-->
+<view class='soon_film'>
+  <view class='soon_film_item' wx:for="{{comingsoonData}}">
+    <view class='soon_film_item_content'>
+      <image src='{{item.poster.origin}}' class='soon_film_item_img'>
+      </image>
+      <view class="soon_film_item_text">
+        <view class='soon_film_item_text_row1'>
+          <view class='soon_film_item_text_name'>
+            {{item.name}}
+          </view>
+          <view class='soon_film_item_text_sorce'>
+            {{item.grade}}
+          </view>
+        </view>
+        <view class='soon_film_item_text_row2'>
+          <view class='soon_film_item_text_desc'>
+            {{item.intro}}
+          </view>
+        </view>
+        <view class='soon_film_item_text_row2'>
+          <view class='soon_film_item_text_time'>
+            {{item.premiereAt}}上映
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

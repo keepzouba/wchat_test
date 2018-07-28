@@ -1,0 +1,11 @@
+/**app.wxss**/
+.container{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    height: 100%;
+    width: 100%;
+}
+view{
+  box-sizing: border-box;
+}

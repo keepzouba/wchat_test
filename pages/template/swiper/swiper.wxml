@@ -1,0 +1,15 @@
+<template name='lbt'>
+  <swiper 
+  indicator-dots="true"
+  autoplay="true" 
+  interval="5000" 
+  duration="500"
+  class='swiper'
+  >
+  <block>
+    <swiper-item class='swiper_img'  wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <image src="{{item.imageUrl}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+</template>

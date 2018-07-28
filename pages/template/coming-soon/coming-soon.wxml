@@ -1,0 +1,20 @@
+<template name="comingsoon">
+  <view class='comingsoon'>
+    <view class='comingsoon_content'>
+      <view wx:for="{{comingsoonData}}" wx:key="{{index}}">
+        <image src="{{item.cover.origin}}">
+        </image>
+        <view class='row_desc'>
+          <view class='comingsoon_desc'>
+            <view class='comingsoon_name'>
+               {{item.name}}
+            </view>
+          </view>
+          <view class='comingsoon_time'>
+            {{item.premiereAt}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

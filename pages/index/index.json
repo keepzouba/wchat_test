@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "component-comingsoon": "/pages/component/coming-soon/coming-soon",
+    "component-nowplaying": "/pages/component/now-playing/now-playing",
+    "component-swiper": "/pages/component/swiper/swiper",
+    "component-top": "/pages/component/top/top"
+  }
+}

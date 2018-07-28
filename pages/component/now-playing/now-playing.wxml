@@ -1,0 +1,23 @@
+
+  <view class='nowplaying'>
+    <view class='nowplaying_content'>
+      <view wx:for="{{nowplayingData}}" wx:key="{{index}}" id="{{item.id}}" bind:tap="godetails">
+        <image src="{{item.cover.origin}}">
+        </image>
+        <view class='row_desc'>
+          <view class='nowplaying_desc'>
+            <view class='nowplaying_name'>
+               {{item.name}}
+            </view>
+            <view class='nowplaying_count'>
+               {{item.cinemaCount}}家电影院上映 {{item.watchCount}}人购票
+            </view>
+          </view>
+          <view class='nowplaying_score'>
+            {{item.grade}}
+          </view>
+        </view>
+      </view>
+    </view>
+     <button class='morenowplaying' bind:tap="getmorenowplaying">更多热映电影</button>
+  </view>

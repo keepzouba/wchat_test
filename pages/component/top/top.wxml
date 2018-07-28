@@ -1,0 +1,15 @@
+
+  <view class='top'>
+    <view class='top_title'>
+      卖座电影
+    </view>
+    <view class='top_position'>
+      <view class='top_city'>
+        长沙
+      </view>
+      <image src='/pages/static/images/down.png' class='top_positionimg'></image>
+    </view>
+    <view class='top_my'>
+      <image src='/pages/static/images/user.png' class='top_my_img'></image>
+    </view>
+  </view>

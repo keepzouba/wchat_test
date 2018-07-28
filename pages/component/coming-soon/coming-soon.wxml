@@ -1,0 +1,20 @@
+
+  <view class='comingsoon'>
+    <view class='comingsoon_content'>
+      <view wx:for="{{comingsoonData}}" wx:key="{{index}}">
+        <image src="{{item.cover.origin}}">
+        </image>
+        <view class='row_desc'>
+          <view class='comingsoon_desc'>
+            <view class='comingsoon_name'>
+               {{item.name}}
+            </view>
+          </view>
+          <view class='comingsoon_time'>
+            {{item.premiereAt}}上映
+          </view>
+        </view>
+      </view>
+      <button class='morecomingsoon' bind:tap="getmorecomingsoon">更多即将上映电影</button>
+    </view>
+  </view>

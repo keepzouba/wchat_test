@@ -1,0 +1,32 @@
+<!--pages/component/film_nowplaying/film_nowplaying.wxml-->
+<view class='now_film'>
+  <view class='now_film_item' wx:for="{{nowplayingData}}">
+    <view class='now_film_item_content'>
+      <image src='{{item.poster.origin}}' class='now_film_item_img'>
+      </image>
+      <view class="now_film_item_text">
+        <view class='now_film_item_text_row1'>
+          <view class='now_film_item_text_name'>
+            {{item.name}}
+          </view>
+          <view class='now_film_item_text_sorce'>
+            {{item.grade}}
+          </view>
+        </view>
+        <view class='now_film_item_text_row2'>
+          <view class='now_film_item_text_desc'>
+            {{item.intro}}
+          </view>
+        </view>
+        <view class='now_film_item_text_row2'>
+          <view class='now_film_item_text_cinemacount'>
+            {{item.cinemaCount}}家影院上映
+          </view>
+           <view class='now_film_item_text_watchcount'>
+            {{item.watchCount}}人购票
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
